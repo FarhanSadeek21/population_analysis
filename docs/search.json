@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-04T22:35:21-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Analysis of World Population",
+      "description": "This website would give you an idea about the current world population and different indices based upon population.\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-04T22:35:21-04:00"
+    }
+  ],
+  "collections": []
+}
