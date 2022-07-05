@@ -63,7 +63,7 @@ economics_life |>
 ```{r}
 economics_life |>
     select(GrowthRate, Income.group, Region, continent) |>
-    ggplot(aes(x = GrowthRate, y = Income.group, color = continent)) +
+    ggplot(aes(y = GrowthRate, x = Income.group, color = continent)) +
     geom_point()
 ```
 
