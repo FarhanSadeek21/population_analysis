@@ -26,12 +26,16 @@ economics_life <- economics_life |>
 ```
 
 
-## Relation between the population and growth rate of countries around the world
 ```{r}
 economics_life |>
-  select(pop2022, GrowthRate, continent) |>
-  ggplot(aes(GrowthRate, pop2022, color = continent)) +
-  geom_point()
-
+    select(pop2022, GrowthRate, continent) |>
+    ggplot(aes(GrowthRate, log(pop2022), color = continent)) +
+    geom_point() +
+    theme_minimal()+
+    labs(title = "Relation between the population and growth rate in 2022",
+         y = "Population (log scale)",
+         x = "Growth Rate",
+         color = "Continent")
+    
 ```
 
