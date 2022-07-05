@@ -67,3 +67,14 @@ economics_life |>
     geom_point()
 ```
 
+```{r}
+
+economics_life |>
+    filter(Lending.category != 'null') |>
+    group_by(Lending.category) |>
+    summarise(count_lending_category = n()) |>
+    ggplot(aes(Lending.category, count_lending_category, color = Region)) +
+    geom_bar(stat = 'identity')
+    
+```
+
