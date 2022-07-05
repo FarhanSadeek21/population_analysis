@@ -68,13 +68,12 @@ economics_life |>
 ```
 
 ```{r}
-
 economics_life |>
-    filter(Lending.category != 'null') |>
     group_by(Lending.category) |>
-    summarise(count_lending_category = n()) |>
-    ggplot(aes(Lending.category, count_lending_category, color = Region)) +
-    geom_bar(stat = 'identity')
-    
+    summarise(count = n()) |>
+    ggplot(aes(x = Lending.category, y = count, fill = Lending.category)) +
+    geom_bar(stat = 'identity')+
+    coord_flip()
 ```
+
 
