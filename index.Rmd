@@ -19,5 +19,9 @@ library(tidyverse)
 
 pop_den_grow <- read.csv('Population, Growth and Density Data.csv')
 loan <- read.csv('Loan Progression.csv')
+economics_life <- merge(x = pop_den_grow, y = loan)
+economics_life <- economics_life |>
+  drop_na() |>
+  mutate(GrowthRate = 100 * (GrowthRate - 1))
 ```
 
