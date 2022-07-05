@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(distill)
 library(rvest)
 library(tidyverse)
+library(ggthemes)
 # library()
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
@@ -25,6 +26,7 @@ economics_life <- economics_life |>
   mutate(GrowthRate = 100 * (GrowthRate - 1))
 ```
 
+*Population vs Growth Rate*
 
 ```{r}
 economics_life |>
@@ -37,5 +39,31 @@ economics_life |>
          x = "Growth Rate",
          color = "Continent")
     
+```
+
+```{r}
+
+# Population and Density
+economics_life |>
+  drop_na() |>
+  select(pop2022, Density, continent) |>
+  ggplot(aes(log(Density), log(pop2022), color = continent)) +
+  geom_point()
+
+```
+
+```{r}
+economics_life |>
+  drop_na() |>
+  select(area, Density, continent) |>
+  ggplot(aes(log(Density), area, color = continent)) +
+  geom_point()
+
+```
+```{r}
+economics_life |>
+    select(GrowthRate, Income.group, Region, continent) |>
+    ggplot(aes(x = GrowthRate, y = Income.group, color = continent)) +
+    geom_point()
 ```
 
