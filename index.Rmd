@@ -7,12 +7,17 @@ site: distill::distill_website
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
+library(distill)
+library(rvest)
+library(tidyverse)
+# library()
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
 
 # Learn more about publishing to GitHub Pages at:
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
+pop_den_grow <- read.csv('Population, Growth and Density Data.csv')
+loan <- read.csv('Loan Progression.csv')
 ```
 
