@@ -6,15 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-04T23:12:24-04:00"
+      "last_modified": "2022-07-05T00:21:38-04:00"
     },
     {
       "path": "index.html",
       "title": "Analysis of World Population",
       "description": "This website would give you an idea about the current world population and different indices based upon population.\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-04T23:12:24-04:00"
+      "contents": "\r\nPopulation vs Growth Rate\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-05T00:21:38-04:00"
     }
   ],
   "collections": []
