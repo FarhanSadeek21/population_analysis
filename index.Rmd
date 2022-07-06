@@ -24,22 +24,13 @@ economics_life <- merge(x = pop_den_grow, y = loan)
 economics_life <- economics_life |>
   drop_na() |>
   mutate(GrowthRate = 100 * (GrowthRate - 1))
+
+View(economics_life)
 ```
 
-*Population vs Growth Rate*
+*`Population vs Growth Rate`*
 
-```{r}
-economics_life |>
-    select(pop2022, GrowthRate, continent) |>
-    ggplot(aes(GrowthRate, log(pop2022), color = continent)) +
-    geom_point() +
-    theme_minimal()+
-    labs(title = "Relation between the population and growth rate in 2022",
-         y = "Population (log scale)",
-         x = "Growth Rate",
-         color = "Continent")
-    
-```
+The relation between population of a country is depicted in the graph below. Key finding from this graph is "**Growth rate is inversely proportional to income category."**
 
 ```{r}
 
@@ -47,8 +38,10 @@ economics_life |>
 economics_life |>
   drop_na() |>
   select(pop2022, Density, continent) |>
-  ggplot(aes(log(Density), log(pop2022), color = continent)) +
-  geom_point()
+  ggplot(aes(Density, pop2022, color = continent)) +
+  geom_point()+
+    scale_x_log10()+
+    scale_y_log10()
 
 ```
 
@@ -56,25 +49,22 @@ economics_life |>
 economics_life |>
   drop_na() |>
   select(area, Density, continent) |>
-  ggplot(aes(log(Density), area, color = continent)) +
-  geom_point()
+  ggplot(aes(Density, area, color = continent)) +
+  geom_point()+
+    scale_x_log10()
 
 ```
+
 ```{r}
 economics_life |>
-    select(GrowthRate, Income.group, Region, continent) |>
-    ggplot(aes(y = GrowthRate, x = Income.group, color = continent)) +
+    select(GrowthRate, income.group, Region, continent) |>
+    ggplot(aes(y = GrowthRate, x = income.group, color = continent)) +
     geom_point()
 ```
 
 ```{r}
 economics_life |>
     group_by(Lending.category) |>
-    summarise(count = n()) |>
-    ggplot(aes(x = Lending.category, y = count, fill = Lending.category)) +
-    geom_bar(stat = 'identity')+
-    coord_flip()
+    summarise(count = n())  |>
+    ggplot()
 ```
-
-
-
