@@ -12,6 +12,7 @@ library(rvest)
 library(tidyverse)
 library(ggthemes)
 library(plotly)
+library(scales)
 # library()
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
@@ -21,14 +22,12 @@ library(plotly)
 
 pop_den_grow <- read.csv('Population, Growth and Density Data.csv')
 loan <- read.csv('Loan Progression.csv')
-View(loan)
-View(pop_den_grow)
 economics_life <- merge(x = pop_den_grow, y = loan, by = "Country")
 economics_life <- economics_life |>
   drop_na() |>
-  mutate(GrowthRate = 100 * (GrowthRate - 1))
+  mutate(GrowthRate = (GrowthRate - 1))
 
-View(economics_life)
+
 ```
 
 *`Population vs Growth Rate`*
@@ -63,9 +62,11 @@ ggplotly(plot)
 
 ```{r}
 plot <- economics_life |>
+    
     select(GrowthRate, income.group, Region, Continent) |>
     ggplot(aes(y = GrowthRate, x = income.group, color = Continent)) +
-    geom_point()
+    geom_point()+
+    scale_y_continuous(labels = percent)
 
 ggplotly(plot)
 ```
