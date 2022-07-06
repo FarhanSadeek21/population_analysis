@@ -42,8 +42,8 @@ plot <- economics_life |>
   select(Country, pop2022, Density, Continent) |>
   ggplot(aes(Density, pop2022, color = Continent)) +
   geom_point()+
-    scale_x_log10()+
-    scale_y_log10()
+    scale_x_log10(labels = comma)+
+    scale_y_log10(labels = comma)
 
 ggplotly(plot)
 
@@ -54,7 +54,7 @@ plot <- economics_life |>
   drop_na() |>
   ggplot(aes(Density, Area, color = Continent)) +
   geom_point()+
-    scale_x_log10()
+    scale_x_log10(labels = comma)
 
 ggplotly(plot)
 
