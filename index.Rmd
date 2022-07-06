@@ -11,6 +11,7 @@ library(distill)
 library(rvest)
 library(tidyverse)
 library(ggthemes)
+library(plotly)
 # library()
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
@@ -37,7 +38,7 @@ The relation between population of a country is depicted in the graph below. Key
 ```{r}
 
 # Population and Density
-economics_life |>
+plot <- economics_life |>
   drop_na() |>
   select(Country, pop2022, Density, Continent) |>
   ggplot(aes(Density, pop2022, color = Continent)) +
@@ -45,27 +46,33 @@ economics_life |>
     scale_x_log10()+
     scale_y_log10()
 
+ggplotly(plot)
+
 ```
 
 ```{r}
-economics_life |>
+plot <- economics_life |>
   drop_na() |>
   ggplot(aes(Density, Area, color = Continent)) +
   geom_point()+
     scale_x_log10()
 
+ggplotly(plot)
+
 ```
 
 ```{r}
-economics_life |>
+plot <- economics_life |>
     select(GrowthRate, income.group, Region, Continent) |>
     ggplot(aes(y = GrowthRate, x = income.group, color = Continent)) +
     geom_point()
+
+ggplotly(plot)
 ```
 
 ```{r}
-economics_life |>
+plot <- economics_life |>
     group_by(Lending.category) |>
-    summarise(count = n())  |>
-    ggplot()
+    summarise(count = n())
+
 ```
