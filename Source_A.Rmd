@@ -1,12 +1,12 @@
 ---
-title: "World Population Review"
+title: "United Nations Department of Economic and Social Affairs"
 description: |
-  An overview of sources used in my project.
+    This project consists of multiple datasets. From the United Nations site the Population dataset was collected.
 author:
-  - name: World Population Review
-    url: https://worldpopulationreview.com/
-    affiliation: World Bank
-    affiliation_url: https://data.worldbank.org/
+  - name: United Nations Department of Economic and Social Affairs
+    url: https://population.un.org/wpp/
+    affiliation: United Nations
+    affiliation_url: https://www.un.org/en/desa
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
@@ -15,8 +15,6 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-“This is where I will describe what sources I used and why I chose them. I may also discuss any broad challenges I faced while finding sources.” 
-
-Distill is a publication format for scientific and technical writing, native to the web. 
+The 2019 Revision of World Population Prospects is the twenty-sixth round of official United Nations population estimates and projections that have been prepared by the Population Division of the Department of Economic and Social Affairs of the United Nations Secretariat.
 
 Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.

@@ -8,3 +8,22 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## About Me
+
+I'm [**Farhan Sadeek**](https://github.com/FarhanSadeek21) from Columbus, Ohio, currently studying as a rising Sophomore at Dublin Coffman High School, MA with an interest in Electrical Engineering, Nuclear Physics, Data Science, and. I like to read non-fiction, and spend time with my family members.
+
+## About the Project
+
+*Analysis of World Population and Economy*
+
+3rd planet from the Sun, Earth is home to 193 nations. Economically all the nations are different from each other. 
+
+## Goals
+
+* Understand the correlation between different life indices
+
+"This is Data Science"  
+~ Preceptor
+
+
+

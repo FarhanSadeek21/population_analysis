@@ -1,12 +1,12 @@
 ---
-title: "World Bank"
+title: "World Bank Open Data"
 description: |
-  An overview of sources used in my project.
+  World bank site contains the economic progress dataset used in the porject
 author:
-  - name: World Population Review
-    url: https://worldpopulationreview.com/
+  - name: World Bank Open Data
+    url: https://data.worldbank.org/
     affiliation: World Bank
-    affiliation_url: https://data.worldbank.org/
+    affiliation_url: https://worldbank.org/
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
@@ -14,9 +14,4 @@ output: distill::distill_article
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-“This is where I will describe what sources I used and why I chose them. I may also discuss any broad challenges I faced while finding sources.” 
-
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+Data displayed on world bank open dataset site are a subset of those available in the World Bank’s DataBank, which contains extensive collections of time series data. The DataBank has advanced functions for selecting and slicing the datasets, performing customized queries and data downloads, and creating charts and other visualizations.

@@ -96,7 +96,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://schema.org/Article -->
   <meta property="article:published" itemprop="datePublished" content="2022-07-07"/>
   <meta property="article:created" itemprop="dateCreated" content="2022-07-07"/>
-  <meta name="article:author" content="World Population Review"/>
+  <meta name="article:author" content="Kumar Rajarshi"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Analysis of World Population: Kaggle"/>
@@ -114,7 +114,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Kaggle"]},{"type":"character","attributes":{},"value":["An overview of sources used in my project.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["World Population Review"]},{"type":"character","attributes":{},"value":["https://worldpopulationreview.com/"]},{"type":"character","attributes":{},"value":["World Bank"]},{"type":"character","attributes":{},"value":["https://data.worldbank.org/"]}]}]},{"type":"character","attributes":{},"value":["2022-07-07"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Kaggle"]},{"type":"character","attributes":{},"value":["An overview of sources used in my project.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Kumar Rajarshi"]},{"type":"character","attributes":{},"value":["https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who"]},{"type":"character","attributes":{},"value":["Kaggle"]},{"type":"character","attributes":{},"value":["https://www.kaggle.com"]}]}]},{"type":"character","attributes":{},"value":["2022-07-07"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2091,7 +2091,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Kaggle","description":"An overview of sources used in my project.","authors":[{"author":"World Population Review","authorURL":"https://worldpopulationreview.com/","affiliation":"World Bank","affiliationURL":"https://data.worldbank.org/","orcidID":""}],"publishedDate":"2022-07-07T00:00:00.000-04:00","citationText":"Review, 2022"}
+{"title":"Kaggle","description":"An overview of sources used in my project.","authors":[{"author":"Kumar Rajarshi","authorURL":"https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who","affiliation":"Kaggle","affiliationURL":"https://www.kaggle.com","orcidID":""}],"publishedDate":"2022-07-07T00:00:00.000-04:00","citationText":"Rajarshi, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2114,8 +2114,9 @@ Sources
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="Source_A.html">World Population Review</a>
+<a href="Source_A.html">United Nations</a>
 <a href="Source_B.html">World Bank</a>
+<a href="Source_C.html">Kaggle</a>
 </div>
 </div>
 <a href="https://github.com/FarhanSadeek21/population_analysis">
@@ -2137,23 +2138,34 @@ Sources
 </div>
 
 <div class="d-byline">
-  World Population Review <a href="https://worldpopulationreview.com/"
-class="uri">https://worldpopulationreview.com/</a> (World Bank)<a
-href="https://data.worldbank.org/"
-class="uri">https://data.worldbank.org/</a>
+  Kumar Rajarshi <a
+href="https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who"
+class="uri">https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who</a> (Kaggle)<a
+href="https://www.kaggle.com" class="uri">https://www.kaggle.com</a>
   
 <br/>2022-07-07
 </div>
 
 <div class="d-article">
-<p>“This is where I will describe what sources I used and why I chose
-them. I may also discuss any broad challenges I faced while finding
-sources.”</p>
-<p>Distill is a publication format for scientific and technical writing,
-native to the web.</p>
-<p>Learn more about using Distill for R Markdown at <a
-href="https://rstudio.github.io/distill"
-class="uri">https://rstudio.github.io/distill</a>.</p>
+<p>Although there have been lot of studies undertaken in the past on
+factors affecting life expectancy considering demographic variables,
+income composition and mortality rates. It was found that affect of
+immunization and human development index was not taken into account in
+the past. Also, some of the past research was done considering multiple
+linear regression based on data set of one year for all the countries.
+Hence, this gives motivation to resolve both the factors stated
+previously by formulating a regression model based on mixed effects
+model and multiple linear regression while considering data from a
+period of 2000 to 2015 for all the countries. Important immunization
+like Hepatitis B, Polio and Diphtheria will also be considered. In a
+nutshell, this study will focus on immunization factors, mortality
+factors, economic factors, social factors and other health related
+factors as well. Since the observations this dataset are based on
+different countries, it will be easier for a country to determine the
+predicting factor which is contributing to lower value of life
+expectancy. This will help in suggesting a country which area should be
+given importance in order to efficiently improve the life expectancy of
+its population.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
