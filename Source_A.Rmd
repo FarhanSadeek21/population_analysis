@@ -1,0 +1,22 @@
+---
+title: "World Population Review"
+description: |
+  An overview of sources used in my project.
+author:
+  - name: World Population Review
+    url: https://worldpopulationreview.com/
+    affiliation: World Bank
+    affiliation_url: https://data.worldbank.org/
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+“This is where I will describe what sources I used and why I chose them. I may also discuss any broad challenges I faced while finding sources.” 
+
+Distill is a publication format for scientific and technical writing, native to the web. 
+
+Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.

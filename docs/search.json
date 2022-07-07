@@ -6,15 +6,57 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T11:38:39-04:00"
+      "last_modified": "2022-07-07T13:27:30-04:00"
     },
     {
       "path": "index.html",
       "title": "Analysis of World Population",
       "description": "This website would give you an idea about the current world population and different indices based upon population.\n",
       "author": [],
-      "contents": "\r\nPopulation and Growth Rate\r\nThe relation between population of a country is depicted in the graph\r\nbelow. Key finding from this graph is “Growth rate is inversely\r\nproportional to income category.”\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with small population tend to have\r\nvery high population density.\r\nCountries with large population tend to have\r\nlow population density.\r\nLand area and Growth Rate\r\nThe relation between growth rate of a country and land area is\r\ndepicted in the graph below. Key finding from this graph is\r\n“Growth rate is inversely proportional to land\r\narea.”\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with small land area tend to have\r\nvery high population density.\r\nCountries with large land area tend to have\r\nlow population density.\r\nIncome area and Growth rate\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T11:38:39-04:00"
+      "contents": "\r\nPopulation and Growth Rate\r\nThe relation between population of a country is depicted in the graph\r\nbelow. Key finding from this graph is “Growth rate is inversely\r\nproportional to income category.”\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with small population tend to have\r\nvery high population density.\r\nCountries with large population tend to have\r\nlow population density.\r\nLand area and Density\r\nThe relation between growth rate of a country and land area is\r\ndepicted in the graph below. Key finding from this graph is\r\n“Density is inversely proportional to land area.”\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with small land area tend to have\r\nvery high population density.\r\nCountries with large land area tend to have\r\nlow population density.\r\nIncome group and Growth rate\r\nThe relation between growth rate of a country and per capita income\r\nis depicted in the graph below. Key finding from this graph is “Growth\r\nrate is inversely proportional to per capita income.”\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with low income fall into the\r\ndeveloping category and have very high growth\r\nrate.\r\nCountries with high income fall into the\r\ndeveloped category and have very low growth\r\nrate. Generally those countries have a growth rate lying\r\nbetween -1% and 1%.\r\nDeveloped\r\nand Developing countries around the globe\r\n\r\n\r\n\r\nKey takeaways from the graph are listed below:\r\nEurope is dominated by developed countries, but\r\nthe rest are filled with developing countries.\r\nDeveloping countries are more common that developed\r\ncountries.\r\nSouth America, North America\r\nand Africa is filled with mostly developing\r\ncountries.\r\nAsia and Oceania is consists of\r\nboth developing and developed countries.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T15:31:03-04:00"
+    },
+    {
+      "path": "Source_A.html",
+      "title": "World Population Review",
+      "description": "An overview of sources used in my project.\n",
+      "author": [
+        {
+          "name": "World Population Review",
+          "url": "https://worldpopulationreview.com/"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\n“This is where I will describe what sources I used and why I chose\r\nthem. I may also discuss any broad challenges I faced while finding\r\nsources.”\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T13:27:45-04:00"
+    },
+    {
+      "path": "Source_B.html",
+      "title": "World Bank",
+      "description": "An overview of sources used in my project.\n",
+      "author": [
+        {
+          "name": "World Population Review",
+          "url": "https://worldpopulationreview.com/"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\n“This is where I will describe what sources I used and why I chose\r\nthem. I may also discuss any broad challenges I faced while finding\r\nsources.”\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T13:27:47-04:00"
+    },
+    {
+      "path": "Source_C.html",
+      "title": "Kaggle",
+      "description": "An overview of sources used in my project.\n",
+      "author": [
+        {
+          "name": "World Population Review",
+          "url": "https://worldpopulationreview.com/"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\n“This is where I will describe what sources I used and why I chose\r\nthem. I may also discuss any broad challenges I faced while finding\r\nsources.”\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T13:27:48-04:00"
     }
   ],
   "collections": []

@@ -4,9 +4,20 @@ description: |
   Analysis of World Population
 output_dir: "docs"
 navbar:
-  left:
+  logo:
+    image: logo.png
+    href: https://www.linkedin.com/in/farhan-sadeek/
+  right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - text : "Sources"
+      menu:
+        - text: "World Population Review"
+          href: Source_A.html
+        - text: "World Bank"
+          href: Source_B.html
+    - icon: fa fa-github
+      href: https://github.com/FarhanSadeek21/population_analysis
 output: distill::distill_article
