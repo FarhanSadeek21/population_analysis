@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\nAbout Me\r\nI’m Farhan\r\nSadeek from Columbus, Ohio, currently studying as a rising\r\nSophomore at Dublin Coffman High School, OH with an interest in\r\nElectrical Engineering, Nuclear Physics and Data Science. I like to read\r\nnon-fiction, and spend time with my family members.\r\nAbout the Project\r\nAnalysis of World Population and Economy\r\n3rd planet from the Sun, Earth is home to 193 nations. Economically\r\nall the nations are different from each other. All these nations differ\r\nfrom one another in different ways. The purpose of this project is to\r\nidentify those differences and investigate the root cause with the help\r\nof data science.\r\nGoals\r\nIdentify different indices of life index\r\nInvestigate how economy impacts those indices\r\n“This is Data Science”\r\n\r\nPreceptor\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T19:21:00-04:00"
+      "last_modified": "2022-07-07T19:28:40-04:00"
     },
     {
       "path": "index.html",
@@ -56,7 +56,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\nAlthough there have been lot of studies undertaken in the past on\r\nfactors affecting life expectancy considering demographic variables,\r\nincome composition and mortality rates. It was found that affect of\r\nimmunization and human development index was not taken into account in\r\nthe past. Also, some of the past research was done considering multiple\r\nlinear regression based on data set of one year for all the countries.\r\nHence, this gives motivation to resolve both the factors stated\r\npreviously by formulating a regression model based on mixed effects\r\nmodel and multiple linear regression while considering data from a\r\nperiod of 2000 to 2015 for all the countries. Important immunization\r\nlike Hepatitis B, Polio and Diphtheria will also be considered. In a\r\nnutshell, this study will focus on immunization factors, mortality\r\nfactors, economic factors, social factors and other health related\r\nfactors as well. Since the observations this dataset are based on\r\ndifferent countries, it will be easier for a country to determine the\r\npredicting factor which is contributing to lower value of life\r\nexpectancy. This will help in suggesting a country which area should be\r\ngiven importance in order to efficiently improve the life expectancy of\r\nits population.\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T19:21:48-04:00"
+      "last_modified": "2022-07-07T19:36:00-04:00"
     }
   ],
   "collections": []
