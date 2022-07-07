@@ -6,15 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-06T10:31:31-04:00"
+      "last_modified": "2022-07-07T11:38:39-04:00"
     },
     {
       "path": "index.html",
       "title": "Analysis of World Population",
       "description": "This website would give you an idea about the current world population and different indices based upon population.\n",
       "author": [],
-      "contents": "\r\nPopulation vs Growth Rate\r\nThe relation between population of a country is depicted in the graph\r\nbelow. Key finding from this graph is “Growth rate is inversely\r\nproportional to income category.”\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-06T10:31:31-04:00"
+      "contents": "\r\nPopulation and Growth Rate\r\nThe relation between population of a country is depicted in the graph\r\nbelow. Key finding from this graph is “Growth rate is inversely\r\nproportional to income category.”\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with small population tend to have\r\nvery high population density.\r\nCountries with large population tend to have\r\nlow population density.\r\nLand area and Growth Rate\r\nThe relation between growth rate of a country and land area is\r\ndepicted in the graph below. Key finding from this graph is\r\n“Growth rate is inversely proportional to land\r\narea.”\r\n\r\n\r\n\r\nThe key takeaways from this graph:\r\nMost countries tend to have density around 100 to 500 per square\r\nkilometer.\r\nCountries with small land area tend to have\r\nvery high population density.\r\nCountries with large land area tend to have\r\nlow population density.\r\nIncome area and Growth rate\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-07T11:38:39-04:00"
     }
   ],
   "collections": []

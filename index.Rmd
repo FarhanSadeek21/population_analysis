@@ -13,6 +13,8 @@ library(tidyverse)
 library(ggthemes)
 library(plotly)
 library(scales)
+library(janitor)
+
 # library()
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
@@ -22,59 +24,184 @@ library(scales)
 
 pop_den_grow <- read.csv('Population, Growth and Density Data.csv')
 loan <- read.csv('Loan Progression.csv')
-economics_life <- merge(x = pop_den_grow, y = loan, by = "Country")
+health <- read.csv('Life Expectancy Data.csv') |>
+    filter(Year == 2014)
+economics_life <- merge(x = pop_den_grow, y = health, by = "Country")
+economics_life <- merge(x = economics_life, y = loan, by = "Country")
 economics_life <- economics_life |>
-  drop_na() |>
-  mutate(GrowthRate = (GrowthRate - 1))
-
+  mutate(GrowthRate = (GrowthRate - 1)) # |>
+  # select(economics_life, -c(X1987, X1989, X1990, X1991, X1992, X1993, X1994, X1995, X1996, X1997, X1998, X1999, X2000, X2001, X2002, X2003, X2004, X2005, X2006, X2007, X2008, X2009, X2010, X2011, X2012, X2013, X2014, X2015, X2016, X2017, X2018, X2019, X2020))
 
 ```
 
-*`Population vs Growth Rate`*
+## Population and Growth Rate
 
 The relation between population of a country is depicted in the graph below. Key finding from this graph is "**Growth rate is inversely proportional to income category."**
 
 ```{r}
 
 # Population and Density
-plot <- economics_life |>
-  drop_na() |>
+economics_life |>
   select(Country, pop2022, Density, Continent) |>
   ggplot(aes(Density, pop2022, color = Continent)) +
   geom_point()+
     scale_x_log10(labels = comma)+
-    scale_y_log10(labels = comma)
-
-ggplotly(plot)
+    scale_y_log10(labels = comma)+
+    #geom_smooth(se=F)+
+    labs(title = "Relation between population and density",
+         subtitle = "Countries with smaller population tend to have higher population density",
+         x = "Density",
+         y = "Population",
+         color = "Continent")
 
 ```
 
+The key takeaways from this graph:
+
+-   Most countries tend to have density around 100 to 500 per square kilometer.
+
+-   Countries with **small** population tend to have **very** **high** population density.
+
+-   Countries with **large** population tend to have **low** population density.
+
+## Land area and Growth Rate
+
+The relation between growth rate of a country and land area is depicted in the graph below. Key finding from this graph is "**Growth rate is inversely proportional to land area."**
+
 ```{r}
-plot <- economics_life |>
-  drop_na() |>
+economics_life |>
   ggplot(aes(Density, Area, color = Continent)) +
   geom_point()+
     scale_x_log10(labels = comma)+
-    scale_y_continuous(labels = comma)
-
-ggplotly(plot)
+    scale_y_log10(labels = comma)+
+    labs(title = "Relation between land area and density",
+         subtitle = "Countries with smaller land area tend to have higher population density",
+         x = "Density",
+         y = "Population",
+         color = "Continent")
 
 ```
 
+The key takeaways from this graph:
+
+-   Most countries tend to have density around 100 to 500 per square kilometer.
+
+-   Countries with **small** land area tend to have **very** **high** population density.
+
+-   Countries with **large** land area tend to have **low** population density.
+
+## Income area and Growth rate
+
 ```{r}
-plot <- economics_life |>
-    
+# View(economics_life)
+economics_life |>
     select(GrowthRate, income.group, Region, Continent) |>
-    ggplot(aes(y = GrowthRate, x = income.group, color = Continent)) +
-    geom_point()+
-    scale_y_continuous(labels = percent)
-
-ggplotly(plot)
+    ggplot(aes(y = GrowthRate, x = income.group, color = Continent))  +
+    geom_point() +
+    scale_y_continuous(labels = percent) +
+    labs(title = "Growth rate across the globe",
+         subtitle = "Countries with low income tend to have high growth rate",
+         x = "Income group",
+         y = "Growth rate",
+         color = "Continent")
 ```
 
 ```{r}
-plot <- economics_life |>
-    group_by(Lending.category) |>
-    summarise(count = n())
+
+economics_life |>
+    select(GrowthRate, income.group, Region, Continent) |>
+    ggplot(aes(y = GrowthRate, x = income.group, color = Region)) +
+    geom_point()+
+    scale_y_continuous(labels = percent) +
+    labs(title = "Growth rate across the globe",
+         subtitle = "Countries with low income tend to have high growth rate",
+         x = "Income group",
+         y = "Growth rate",
+         color = "Region")
+```
+
+```{r}
+
+economics_life |>
+    select(GrowthRate, Status, Region) |>
+    ggplot(aes(y = GrowthRate, x = Status, color = Region)) +
+    geom_point()+
+    scale_y_continuous(labels = percent) +
+    labs(title = "Growth rate across the globe",
+         subtitle = "Countries with low income tend to have high growth rate",
+         x = "Income group",
+         y = "Growth rate",
+         color = "Region")
+```
+
+```{r}
+
+economics_life |>
+    select(GrowthRate, Status, Region) |>
+    ggplot(aes(y = GrowthRate, x = Status, color = Region)) +
+    geom_point()+
+    scale_y_continuous(labels = percent) +
+    labs(title = "Growth rate across the globe",
+         subtitle = "Countries with low income tend to have high growth rate",
+         x = "Income group",
+         y = "Growth rate",
+         color = "Region")
 
 ```
+
+```{r}
+
+economics_life |>
+    ggplot(aes(Continent)) +
+    geom_bar(aes(fill = Status))+
+    labs(title = "Developed and developing countries around the world",
+         subtitles = "Except Europe all the continents are dominated by developing countries",
+         x = "Continent",
+         y = "Count",
+         color = "Status")
+
+
+economics_life |>
+    ggplot(aes(Status)) +
+    geom_bar(aes(fill = Region)) +
+    labs(title = "Developed and developing countries around the world",
+         subtitles = "The amount of developing countries surpass developed countries by landslide",
+         x = "Status",
+         y = "Count",
+         color = "Continent")
+
+
+economics_life |>
+    ggplot(aes(income.group)) +
+    geom_bar(aes(fill = Continent)) +
+    labs(title = "Developed and developing countries around the world",
+         subtitles = "Most High Income countries are located in Europe and most low income are in Africe, and Middle earners are extremelty diverse",
+         x = "Income Group",
+         y = "Count",
+         color = "Continent")
+```
+
+```{r}
+
+economics_life |>
+    ggplot(aes(income.group)) +
+    geom_bar(aes(fill = Continent)) +
+    labs(title = "Developed and developing countries around the world",
+         subtitles = "Most High Income countries are located in Europe and most low income are in Africe, and Middle earners are extremelty diverse",
+         x = "Income Group",
+         y = "Count",
+         color = "Continent")
+```
+
+```{r}
+
+economics_life |>
+    ggplot(aes(income.group)) +
+    geom_bar(aes(fill = Continent)) +
+    labs(title = "Developed and developing countries around the world",
+         subtitles = "Most High Income countries are located in Europe and most low income are in Africe, and Middle earners are extremelty diverse",
+         x = "Income Group",
+         y = "Count",
+         color = "Continent")
+```
+
