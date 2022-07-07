@@ -33,7 +33,7 @@ economics_life <- economics_life |>
 # View(economics_life)
 ```
 
-## Population and Growth Rate
+## Population and Density
 
 The relation between population of a country is depicted in the graph below. Key finding from this graph is "**Growth rate is inversely proportional to income category."**
 
@@ -64,7 +64,7 @@ The key takeaways from this graph:
 
 -   Countries with **large** population tend to have **low** population density.
 
-## Land Area and Density
+## Population and Density
 
 The relation between growth rate of a country and land area is depicted in the graph below. Key finding from this graph is "**Density is inversely proportional to land area."**
 
@@ -159,8 +159,8 @@ economics_life |>
     geom_bar(aes(fill = Region)) +
     labs(title = "Developed and developing countries around the world",
          subtitles = "The amount of developing countries surpass developed countries by landslide",
-         x = "Economic Progress",
-         y = "Count",
+         y = "Economic Progress",
+         x = "Count",
          color = "Continent")
 
 economics_life |>
@@ -169,8 +169,8 @@ economics_life |>
     geom_bar(aes(fill = Status))+
     labs(title = "Developed and developing countries around the world",
          subtitles = "Except Europe all the continents are dominated by developing countries",
-         x = "Continent",
-         y = "Count",
+         y = "Continent",
+         x = "Count",
          color = "Economic Progress")
 
 
@@ -180,8 +180,8 @@ economics_life |>
     geom_bar(aes(fill = Status))+
     labs(title = "Developed and developing countries around the world",
          subtitles = "Except Europe all the continents are dominated by developing countries",
-         x = "Continent",
-         y = "Count",
+         y = "Continent",
+         x = "Count",
          color = "Economic Progress")
 
 
@@ -193,8 +193,8 @@ economics_life |>
     
     labs(title = "Developed and developing countries around the world",
          subtitles = "Most high Income countries in Europe, low income are in Africe, and middle earners are diverse",
-         x = "Income Group",
-         y = "Count",
+         y = "Income Group",
+         x = "Count",
          color = "Continent")
 ```
 
@@ -246,7 +246,7 @@ economics_life |>
          subtitles = "Most High Income countries are located in Europe and most low income are in Africe, and Middle earners are extremelty diverse",
          x = "Income Group",
          y = "Count",
-         color = "Continent")
+         fill = "Lending Category")
 
 
 ```
