@@ -56,7 +56,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\nAlthough there have been lot of studies undertaken in the past on\r\nfactors affecting life expectancy considering demographic variables,\r\nincome composition and mortality rates. It was found that affect of\r\nimmunization and human development index was not taken into account in\r\nthe past. Also, some of the past research was done considering multiple\r\nlinear regression based on data set of one year for all the countries.\r\nHence, this gives motivation to resolve both the factors stated\r\npreviously by formulating a regression model based on mixed effects\r\nmodel and multiple linear regression while considering data from a\r\nperiod of 2000 to 2015 for all the countries. Important immunization\r\nlike Hepatitis B, Polio and Diphtheria will also be considered. In a\r\nnutshell, this study will focus on immunization factors, mortality\r\nfactors, economic factors, social factors and other health related\r\nfactors as well. Since the observations this dataset are based on\r\ndifferent countries, it will be easier for a country to determine the\r\npredicting factor which is contributing to lower value of life\r\nexpectancy. This will help in suggesting a country which area should be\r\ngiven importance in order to efficiently improve the life expectancy of\r\nits population.\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-07T19:41:24-04:00"
+      "last_modified": "2022-07-07T19:43:01-04:00"
     }
   ],
   "collections": []
