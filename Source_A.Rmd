@@ -16,5 +16,3 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 The 2019 Revision of World Population Prospects is the twenty-sixth round of official United Nations population estimates and projections that have been prepared by the Population Division of the Department of Economic and Social Affairs of the United Nations Secretariat.
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.

@@ -34,8 +34,9 @@ economics_life <- economics_life |>
 ```
 
 ## Density
+Population density is how many people live in one square mile or one square kilometer. If we divide the population by the area we get the density.
 
-The relation between population of a country is depicted in the graph below. Key finding from this graph is "**Except micronations there is no correlation between population and density"**
+The influence of different factors on the population density of a country is depicted in the graphs below.
 
 ```{r}
 
@@ -76,8 +77,9 @@ The key takeaways from this graph:
 
 
 ## Growth Rate
+The annual average rate of change of population size, for a given country, territory, or geographic area, during a specified period.
 
-The relation between growth rate of a country and per capita income is depicted in the graph below. Key finding from this graph is "Growth rate is inversely proportional to per capita income."
+The influence of different factors on the population growth of a nation is depicted in the graph below.
 
 ```{r}
 # View(economics_life)
@@ -133,6 +135,10 @@ The key takeaways from this graph:
 -   Countries with **high income** fall into the **developed category** and have **very low growth rate**. Generally those countries have a growth rate lying between **-1%** and **1%**.
 
 ## Economic Progress
+
+The per capita income of a country indicates whether or not a country is economically strong.
+
+The influence of different factors on the economic progress of a country is depicted in the graphs below.
 
 ```{r}
 
@@ -194,7 +200,7 @@ Key takeaways from the graph are listed below:
 
 ## Lending Category and Economy
 
-**IDA** stands for **International Development Association**, which is one of the largest and most effective platforms for fighting extreme poverty in the world's poorest countries. On the other hand, **IBRD** stands for the **International Bank for Reconstruction and Development,** commonly referred as **World Bank**. **IBRD** assists the development of its member nation's territories, promotes and supplements private foreign investment and promoting long-range balance.
+**IDA** stands for **International Development Association**, which is one of the largest and most effective platforms for fighting extreme poverty in the world's poorest countries. On the other hand, **IBRD** stands for the **International Bank for Reconstruction and Development,** commonly referred as **World Bank**. **IBRD** assists the development of its member nation's territories, promotes and supplements private foreign investment and promoting long-range balance. The influence of different factors on the lend category of a country is depicted in the graphs below.
 
 ```{r}
 
@@ -239,6 +245,6 @@ Key takeaways from the graph are listed below:
 
 -   Most developing **countries** are located in **Africa**. So these nations have to depend a lot on loans from **IDA** to develop the quality of life.
 
--   Europe is the most developed continent, therefore, most European nations don't need any loans to operate their economy.
+-   **Europe** is the most developed continent, therefore, most European nations don't need any loans to operate their economy.
 
--   Asia consists of both developed and developing nations. So there's a diversity among Asian nations.
+-   **Asia** consists of both developed and developing nations. So there's a diversity among Asian nations.
