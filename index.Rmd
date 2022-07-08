@@ -128,8 +128,6 @@ economics_life |>
 
 The key takeaways from this graph:
 
--   Most countries tend to have density around 100 to 500 per square kilometer.
-
 -   Countries with **low income** fall into the **developing category** and have **very high growth rate**.
 
 -   Countries with **high income** fall into the **developed category** and have **very low growth rate**. Generally those countries have a growth rate lying between **-1%** and **1%**.
