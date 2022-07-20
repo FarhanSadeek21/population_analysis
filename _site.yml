@@ -5,7 +5,7 @@ cookie_consent:
   lang: en
   cookies_policy: url
 name: "."
-title: "Analysis of World Population"
+title: "Analysis of World Population and Economy"
 description: |
   Analysis of World Population
 output_dir: "docs"

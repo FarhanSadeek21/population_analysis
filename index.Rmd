@@ -1,7 +1,7 @@
 ---
-title: "Analysis of World Population and Economy"
+title: "Analysis of World Population"
 description: |
-  This website would give you an idea about the current world population and different indices based upon population.
+    This website would give you an idea about the current world population and different indices based upon population.
 site: distill::distill_website
 ---
 
@@ -34,7 +34,8 @@ economics_life <- economics_life |>
 ```
 
 ## Density
-Population density is how many people live in one square mile or one square kilometer. If we divide the population by the area we get the density.
+
+*Population density is how many people live in one square mile or one square kilometer. If we divide the population by the area we get the density.*
 
 The influence of different factors on the population density of a country is depicted in the graphs below.
 
@@ -71,12 +72,12 @@ economics_life |>
 
 The key takeaways from this graph:
 
-- The population density can be as low as **20** and go all the way to **10000** per square kilometer.
+-   The population density can be as low as **20** and go all the way to **10000** per square kilometer.
 
-- Most countries regardless of their location, income or economic progress tend to have the similar population density.
-
+-   Most countries regardless of their location, income or economic progress tend to have the similar population density.
 
 ## Growth Rate
+
 The annual average rate of change of population size, for a given country, territory, or geographic area, during a specified period.
 
 The influence of different factors on the population growth of a nation is depicted in the graph below.
